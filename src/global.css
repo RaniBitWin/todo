@@ -1,0 +1,39 @@
+:root {
+  --white: #fff;
+  --blue: #4EA8DE;
+  --dark-blue: #1E6F9F;
+  --purple: #8284FA;
+  --purple-dark: #5E60CE;
+  --bg-gray: #454545;
+  --gray-100:#F2F2F2;
+  --gray-200:#D9D9D9;
+  --gray-300:#808080; 
+  --gray-400:#333333; 
+  --gray-500:#262626;  
+  --gray-700: #0D0D0D;   
+}
+
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--blue);
+}
+
+*{
+  /* comprimem o elemento para nunca aumentem sua largura e altura */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body{
+  background: var(--bg-gray);  
+   /* Deixa a fonte mais fininha, detalhada. Recurso se não estiver usando fontes padrão do sistema como Arial, Helvética...  */
+  -webkit-font-smoothing: antialiased;
+}
+
+ /* não basta apenas configurar as fontes para body, porque input, textearea, button, por padrão tem sua própria custumização de fontes  */
+ body, input, textarea, button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; /* usar sempre unidades de medidas relativas para melhor experiência do usuário  */ 
+   font-size: 1rem; /*1rem = 16px */
+} 

@@ -1,0 +1,179 @@
+.header {  
+  display: flex;
+  background: var(--gray-700);
+  justify-content: center;
+  align-items: center;  
+  padding: 1.25rem 0;
+  width: 90rem;
+  height: 12.5rem;  
+}
+.header img{
+  height: 2rem;
+}
+
+.header p {
+  display: inline;
+  color: var(--blue);  
+  width: 5.75rem;
+  height: 3rem;
+  left: calc(50% - 5.75rem/2 + 1.0625rem);
+  margin-top: 3.25rem;   
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+.header p span {
+  color: var(--purple-dark);
+}
+
+.tasksDone {  
+  display: flex;  
+  justify-content: space-between; 
+  align-items: center;  
+  width:46rem;
+  height: 1.1875rem;
+  margin-bottom: 1.5rem;
+      
+}
+
+ .tasksDone p {  
+  display: flex; 
+  align-items: center;   
+  gap: 0.5rem;
+   
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 0.875rem;  
+  line-height: 1;
+  align-items: left;
+  vertical-align: top;
+  color: var(--blue); 
+}
+
+.tasksDone p span {   
+  width: 1.1875rem; 
+  height: 100%;      
+  border-radius: 999px;
+  padding: 0.110rem 0rem ; 
+  background: var(--gray-400);
+
+  font-size: 0.75rem;   
+  text-align: center;  
+  color: var(--gray-200);
+}
+
+.tasksDone .completed{
+  color: var(--purple);
+}
+
+.tasksDone .completedTasks {
+ width: 3.5rem;
+ }
+
+.newTask {  
+  display: flex;
+  gap: 0.5rem;
+  width: 46rem;
+  height: 3.375rem; 
+  margin-top: -1.6875rem; 
+  margin-left: 22rem;  
+}
+
+.newTask textarea {
+  background: var(--gray-500);
+  width: 39.875rem;
+  border: 1px solid var(--gray-700) ;
+  border-radius: 8px;
+  color: var(--gray-100);  
+}
+.newTask textarea::placeholder {
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.4;  
+  align-items: left;
+  vertical-align: top;
+  color: var(--gray-300);
+  padding-left: 0.5rem;
+  padding-top: 0.85rem;
+}
+.newTask button {
+  background: var(--dark-blue);
+  width: 5.625rem;
+  border: transparent;  
+  border-radius: 8px; 
+  color: var(--gray-100);
+  font-family: Inter;
+  font-weight:bold;
+  font-size: 0.875rem;  
+  line-height: 1.4;
+  align-items: left;
+  vertical-align: top;
+
+}
+
+main{  
+  width:46rem;
+  height: 25.5rem;
+  margin-top: 2.6875rem;
+  margin-left: 22rem; 
+  
+}
+main .empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gray-300);
+  border-top: 1px solid var(--gray-300);
+  border-radius: 8px;
+  padding-top: 4rem;
+  font-family: Inter;
+  font-weight:700;
+  font-size: 1rem;  
+  line-height: 1.4;
+  color: var(--gray-300); 
+}
+main .emptyLeave {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+main .empty span {
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 1rem;  
+  line-height: 1.4;
+  color: var(--gray-300);
+}
+
+  
+/* responsividade */
+@media (max-width:768px){
+  html{      
+    font-size: 87.5%; /*x% = 100%*(para o caso de 14px)/16px(1rem)*/
+  }
+  .header{
+    width: 48rem;                
+  } 
+  .header p {
+    margin-left: -1rem;
+  }
+  .tasksDone {
+    width:22rem;    
+   }  
+  .newTask {     
+    width: 22rem;    
+    margin-left: 13rem;
+  }
+  main {
+    width:22rem;    
+    margin-left: 13rem; 
+  }
+  
+
+}
+
