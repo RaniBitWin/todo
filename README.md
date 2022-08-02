@@ -1,0 +1,11 @@
+## todo
+- First challenge of the Rocketseat reactjs course.
+- Module: Ignite.
+- Teacher: Diego Fernandes.
+- Based on classes on reactjs fundamentals.
+- The app consists of a task scheduler with the following functions:
+  - Create a to-do list.
+  - Mark a task complete.
+  - Delete tasks.
+- Shows the number of tasks in the list.
+- And how many of the tasks on the list were completed.
